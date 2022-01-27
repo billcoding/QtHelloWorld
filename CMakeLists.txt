@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(QtApp)
+project(QtHelloWorld)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_AUTOMOC ON)
@@ -12,8 +12,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(QtApp main.cpp mainwindow.cpp mainwindow.h)
-target_link_libraries(QtApp
+add_executable(QtHelloWorld main.cpp mainwindow.cpp mainwindow.h)
+target_link_libraries(QtHelloWorld
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets
